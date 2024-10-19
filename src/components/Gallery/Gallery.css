@@ -1,0 +1,22 @@
+/* Photo Gallery */
+.gallery .photos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+  }
+  
+  .gallery img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  .section-text{
+    justify-content: center;
+    text-align: center;
+  }
+  #section2 {  
+    display: block;
+    /* height: 200vh; */
+  }

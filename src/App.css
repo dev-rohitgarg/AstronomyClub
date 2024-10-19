@@ -1,0 +1,21 @@
+body{
+    color: aliceblue;
+    background-image: url(./img/background.jpg);
+}
+
+.navbar{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.navbar a {
+    color: aliceblue;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.navbar a:hover {
+    text-decoration: underline;
+} 
+  

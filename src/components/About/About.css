@@ -1,0 +1,58 @@
+/* .welcome-section {
+    text-align: center;
+    padding: 50px;
+    background-color: #f0f0f0;
+    position: relative;
+  } */
+
+  /* Different section background colors */
+  #section1 { 
+    /* background-color: rgba(255, 255, 255, 0.9);  */
+    position: relative;
+    padding-top: 0px;
+    text-align: center;
+    padding: 50px;
+    /* background-color: #f0f0f0; */
+    overflow: hidden;
+}
+  #section1 h1{ 
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2; /* Ensure the heading is on top */
+    font-size: 48px;
+    /* color: #333; */
+}
+
+  
+  .image-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+    position: relative; /* Allows z-index for images */
+  }
+  
+  .image-grid img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    /* transition: transform 0.3s ease; */
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    cursor: pointer;
+    opacity: 0.5; /* Reduce opacity by default */
+    z-index: 1;
+  }
+  
+  /* .image-grid img:hover {
+    transform: scale(2); 
+    z-index: 10; 
+  } */
+  
+  .image-grid img:hover {
+    transform: scale(2); /* Enlarge the image on hover */
+    opacity: 1;          /* Full opacity on hover */
+    z-index: 2;          /* Bring the hovered image to the front */
+  }

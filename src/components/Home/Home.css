@@ -1,0 +1,47 @@
+/* Position the text above the images */
+#section1 {
+    position: relative;
+    height: 80vh; /* Adjust the height to ensure images fit behind */
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: center;
+    /* background-color: #f0f0f0; */
+  }
+  
+  .welcome-text {
+    position: absolute;
+    /* text-align: center; */ 
+    margin-top: 20vh;
+    z-index: 2; /* Ensures the text is on top of images */
+    font-size: 48px;
+    /* margin-bottom: 20px; */
+    /* color: #333; */
+  }
+  
+  .image-grid {
+    position: relative;
+    z-index: 1; /* Ensures the images are behind the text */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    opacity: 0.5; /* Reduced opacity for all images initially */
+    transition: opacity 0.3s ease;
+  }
+  
+  .image-grid img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    cursor: pointer;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+  }
+  
+  /* Hovering over any image makes it fully opaque and enlarges it */
+  .image-grid img:hover {
+    opacity: 1;
+    transform: scale(2);
+    z-index: 3; /* Bring the hovered image to the front */
+  }
+  
