@@ -1,58 +1,41 @@
-/* .welcome-section {
-    text-align: center;
-    padding: 50px;
-    background-color: #f0f0f0;
-    position: relative;
-  } */
-
-  /* Different section background colors */
-  #section1 { 
-    /* background-color: rgba(255, 255, 255, 0.9);  */
-    position: relative;
-    padding-top: 0px;
-    text-align: center;
-    padding: 50px;
-    /* background-color: #f0f0f0; */
-    overflow: hidden;
-}
-  #section1 h1{ 
-    position: absolute;
-    top: 20%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 2; /* Ensure the heading is on top */
-    font-size: 48px;
-    /* color: #333; */
+.About-text {
+  margin-bottom: 20px;
+  margin-top: 50px;
 }
 
+
+#section3 {
+  display: flex;           /* Enables flexbox */
+  justify-content: space-between; /* Evenly space items horizontally */
+  align-items: center;     /* Align items vertically in the middle */
+  height: 100vh;           /* Example height for the section */
+  padding: 20px;           /* Optional: for some padding around the section */
+}
+
+
+
+.left-div {
+  flex: 0 0 65%;             /* Take up 60% of the section width */
+  height: 100%;            /* Full height of the section */
+  margin: 0 10px;  
+  display: flex;
+  flex-direction: column;    /* Stack h1 and p vertically */
+  justify-content: flex-start; /* Align content at the top */
+  align-items: center;   /* Align content to the left */
+  padding: 20px;
+  font-size: 24px;
+}
+
+.right-div {
+  flex: 0 0 35%;             /* Take up 40% of the section width */
   
-  .image-grid {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 10px;
-    margin-top: 20px;
-    position: relative; /* Allows z-index for images */
-  }
-  
-  .image-grid img {
-    width: 100px;
-    height: 100px;
-    object-fit: cover;
-    /* transition: transform 0.3s ease; */
-    transition: transform 0.3s ease, opacity 0.3s ease;
-    cursor: pointer;
-    opacity: 0.5; /* Reduce opacity by default */
-    z-index: 1;
-  }
-  
-  /* .image-grid img:hover {
-    transform: scale(2); 
-    z-index: 10; 
-  } */
-  
-  .image-grid img:hover {
-    transform: scale(2); /* Enlarge the image on hover */
-    opacity: 1;          /* Full opacity on hover */
-    z-index: 2;          /* Bring the hovered image to the front */
-  }
+  display: flex;
+  justify-content: center;   /* Center horizontally */
+  align-items: center;       /* Center vertically */
+}
+
+.right-div img {
+  max-width: 100%;           /* Ensure the image scales to fit */
+  height: auto;              /* Maintain the aspect ratio */
+  margin-right: 50px;
+}

@@ -8,6 +8,7 @@ function Navbar() {
             <a href="#section1">Home</a>
             <a href="#section3">About</a>
             <a href="#section2">Gallery</a>
+            <a href="#section5">Past Events</a>
             <a href="#section4">Contact</a>
         </nav>
     );

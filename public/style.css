@@ -122,3 +122,17 @@
     
   }
   
+
+
+  .half-div {
+    flex: 1;                 /* Each div takes up equal space */
+    height: 100%;            /* Full height of the section */
+    margin: 0 10px;          /* Optional: Add space between the divs */
+    /* background-color: lightblue;  */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;  /* Center content horizontally */
+    align-items: center;      /* Center content vertically */
+    font-size: 24px;          /* Example font size */
+  }
+  

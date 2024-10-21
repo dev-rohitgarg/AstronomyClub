@@ -6,6 +6,7 @@ import Home from "./components/Home/Home";
 import Gallery from "./components/Gallery/Gallery";
 import About from "./components/About/About";
 import Contact from "./components/Contact/Contact";
+import PastEvents from "./components/PastEvents/PastEvents";
 
 
 const imageArray = [
@@ -120,6 +121,7 @@ function App() {
       {/* <ImageGallery /> */}
       <About />
       <Gallery />
+      <PastEvents />
       <Contact />
     </div>
   );

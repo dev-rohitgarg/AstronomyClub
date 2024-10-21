@@ -12,7 +12,7 @@
   .welcome-text {
     position: absolute;
     /* text-align: center; */ 
-    margin-top: 20vh;
+    /* margin-top: 10vh; */
     z-index: 2; /* Ensures the text is on top of images */
     font-size: 48px;
     /* margin-bottom: 20px; */
