@@ -1,13 +1,22 @@
 /* Position the text above the images */
-#section1 {
+/* #section1 {
     position: relative;
-    height: 80vh; /* Adjust the height to ensure images fit behind */
+    height: 80vh; 
     display: flex;
-    /* flex-direction: column; */
+   
     justify-content: center;
     align-items: center;
-    /* background-color: #f0f0f0; */
-  }
+    
+  } */
+
+  #section1 {
+    position: relative;
+    /* height: 80vh;  */
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
   
   .welcome-text {
     position: absolute;
@@ -44,4 +53,16 @@
     transform: scale(2);
     z-index: 3; /* Bring the hovered image to the front */
   }
+
+  @media (max-width: 768px) {
+    .image-grid, .section1{
+        flex-basis: 100%; /* Full width for small screens */
+        max-width: 100%;
+    }
+  
+    .image-grid, .section1 {
+        text-align: center; /* Center text on smaller screens */
+    }
+  }
+    
   

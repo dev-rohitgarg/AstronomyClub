@@ -1,8 +1,7 @@
 /* .section4{
     height: 80vh;
 } */
-.contact-section {
-    /* background-color: gray; */
+/* .contact-section {
     padding: 10px;
     text-align: left;
     border-radius: 8px;
@@ -12,7 +11,20 @@
     flex-direction: column;
     align-items: center;
   }
-  
+   */
+
+   .contact-section {
+    height: 100%;
+    padding: 5%;             /* Responsive padding */
+    text-align: left;
+    border-radius: 8px;
+    font-family: Arial, sans-serif;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 90%;          /* Ensure the contact section stays within a responsive width */
+}
   .contact-details {
     display: flex;
     justify-content: space-around; /* Align items horizontally with equal spacing */
@@ -45,5 +57,12 @@
   
   .contact-item svg {
     color: white; /* Set icon color */
+  }
+
+
+  @media only screen and (max-width: 768px) {
+    .contact-section {
+      display: none; /* Hide the right-div, including the image, on small screens */
+    }
   }
   

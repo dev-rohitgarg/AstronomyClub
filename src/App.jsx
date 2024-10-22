@@ -117,7 +117,7 @@ function App() {
       <Navbar />
 
       {/* Sections */}
-      <Home imageCount={44} imagesArray={imageArray} />
+      <Home imageCount={30} imagesArray={imageArray} />
       {/* <ImageGallery /> */}
       <About />
       <Gallery />

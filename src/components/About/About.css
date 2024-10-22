@@ -4,12 +4,20 @@
 }
 
 
+/* #section3 {
+  display: flex;          
+  justify-content: space-between; 
+  align-items: center;     
+  height: 100vh;           
+  padding: 20px;           
+} */
+
 #section3 {
   display: flex;           /* Enables flexbox */
   justify-content: space-between; /* Evenly space items horizontally */
   align-items: center;     /* Align items vertically in the middle */
-  height: 100vh;           /* Example height for the section */
-  padding: 20px;           /* Optional: for some padding around the section */
+  height: 100vh;           /* Full viewport height */
+  padding: 5%;             /* Padding set as percentage for responsiveness */
 }
 
 
@@ -38,4 +46,10 @@
   max-width: 100%;           /* Ensure the image scales to fit */
   height: auto;              /* Maintain the aspect ratio */
   margin-right: 50px;
+}
+
+@media only screen and (max-width: 768px) {
+  .right-div {
+    display: none; /* Hide the right-div, including the image, on small screens */
+  }
 }

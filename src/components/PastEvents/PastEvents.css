@@ -1,20 +1,27 @@
 
+/* #section5 {
+   display: flex;           
+   justify-content: space-between; 
+   align-items: center;     
+   height: 100vh;           
+   padding: 20px;           
+ } */
 
-/* #section5{
-    display: block;
-} */
+ #section5 {
+   display: flex;           
+   justify-content: space-between; /* Evenly space items horizontally */
+   align-items: center;     /* Align items vertically in the middle */
+   /* height: 100vh;           */
+   height: 100%;
+   /* width: 100%; */
+   padding: 5%;             /* Padding as percentage for responsiveness */
+}
+ 
+
 #section5 h1{
     margin-bottom: 20px;
     margin-top: 50px;
       text-align: center;
-  }
-  
- #section5 {
-    display: flex;           /* Enables flexbox */
-    justify-content: space-between; /* Evenly space items horizontally */
-    align-items: center;     /* Align items vertically in the middle */
-    height: 100vh;           /* Example height for the section */
-    padding: 20px;           /* Optional: for some padding around the section */
   }
   
   
@@ -33,7 +40,6 @@
   
   .Telescope {
     flex: 0 0 30%;             /* Take up 40% of the section width */
-    
     display: flex;
     justify-content: center;   /* Center horizontally */
     align-items: center;       /* Center vertically */
@@ -41,8 +47,9 @@
   
   .Telescope img {
     max-width: 100%;           /* Ensure the image scales to fit */
-    height: 50vh;              /* Maintain the aspect ratio */
+    height: 50vh;             
     margin-right: 50px;
+    /* height: auto; */
   }
 
   .carousal-container-events{
@@ -52,7 +59,8 @@
 
   .carousel-events {
     display: flex;
-    overflow-x: auto;
+    /* overflow-x: auto; */
+    overflow-x: hidden;
     padding: 20px;
     gap: 20px;
     scroll-behavior: smooth;
@@ -115,5 +123,11 @@
   
   .scroll-button-events:hover {
     background-color: rgba(0, 0, 0, 0.8);
+  }
+
+  @media only screen and (max-width: 768px) {
+    .Telescope {
+      display: none; /* Hide the right-div, including the image, on small screens */
+    }
   }
   

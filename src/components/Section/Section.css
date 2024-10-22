@@ -1,23 +1,22 @@
- /* Section Styles */
+/* 
  .section {
-    /* position: relative;
-    left: 0;
-    right: 0; */
-    /* position: absolute; */
-    /* bottom: 0;
-    left: 0; */
-    
-    
-    margin-top: 0; /* Ensure no extra margin */
+
+    margin-top: 0; 
     height: 100vh;
-    padding: 100px 20px; /* Space for navbar */
+    padding: 100px 20px; 
     display: flex;
     justify-content: center;
     align-items: center;
-    /* background-color: #f4f4f4; */
+    scroll-behavior: smooth;
+  } */
+
+  .section {
+    margin-top: 0; /* Ensure no extra margin */
+    /* height: 100vh; */
+    height: 100%;
+    padding: 10% 5%; /* Space for navbar with percentage-based padding */
+    display: flex;
+    justify-content: center;
+    align-items: center;
     scroll-behavior: smooth; /* Smooth scrolling */
-  }
-  
-  
-/* #section3 { background-color: rgba(244, 244, 244, 0.9); }
-#section4 { background-color: rgba(221, 221, 221, 0.9); } */
+}
