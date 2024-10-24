@@ -76,7 +76,7 @@
   
   .image-content {
     display: none;
-    position: absolute;
+    /* position: absolute; */
     bottom: 10px;
     left: 10px;
     background: rgba(0, 0, 0, 0.6);

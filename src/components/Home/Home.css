@@ -54,15 +54,15 @@
     z-index: 3; /* Bring the hovered image to the front */
   }
 
-  @media (max-width: 768px) {
+  /* @media (max-width: 768px) {
     .image-grid, .section1{
-        flex-basis: 100%; /* Full width for small screens */
+        flex-basis: 100%; 
         max-width: 100%;
     }
   
     .image-grid, .section1 {
-        text-align: center; /* Center text on smaller screens */
+        text-align: center; 
     }
   }
-    
+     */
   

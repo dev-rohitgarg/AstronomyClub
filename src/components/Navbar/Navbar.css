@@ -23,8 +23,8 @@
     text-decoration: underline;
   }
 
-  @media only screen and (max-width: 768px) {
+  /* @media only screen and (max-width: 768px) {
     .navbar {
-      display: none; /* Hide the right-div, including the image, on small screens */
+      display: none; 
     }
-  }
+  } */
