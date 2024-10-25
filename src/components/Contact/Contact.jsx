@@ -20,7 +20,7 @@ import { FaInstagram, FaEnvelope } from 'react-icons/fa'; // Import icons
 
 const Contact = () => {
     return (
-        <div className="contact-section" id='section4'>
+        <div className="section" id='section4'>
             <h2>Contact Us</h2>
             <div className="contact-details">
                 <div className="contact-item">

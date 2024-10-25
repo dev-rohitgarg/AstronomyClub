@@ -1,8 +1,51 @@
+*::before,
+*::after ,
 * {
-    /* box-sizing: border-box; */
+    box-sizing: border-box;
     margin: 0; /* Reset margins */
     padding: 0; /* Reset padding */
-  }
+}
+html {
+width: 100%;
+overflow-x: hidden;
+ scroll-behavior: smooth;
+ /* width: 100vw;
+ height: 100vh; */
+ margin-left: 0;
+ margin: 0;
+ padding: 0;
+ /* overflow-x: hidden; */
+ 
+}
+body {
+  color: aliceblue;
+  /* position: absolute; */
+  /* bottom: 0px;
+  left: 0px;
+  right: 0px; */
+  /* position: absolute; */
+  /* bottom: 0;
+  left: 0; */
+  /* background-repeat: no-repeat; */
+  /* height: 1000vh; */
+  /* margin: 0; */
+  /* content: ''; */
+  background-image: url(/img/background.jpg);
+  /* background-size: contain; */
+  background-size: cover;
+  background-position: top left;
+  background-attachment: fixed;
+  
+  /* background-size: cover; */
+  /* background-repeat: repeat; */
+  background-position: center;
+ 
+  width: 100%;
+  height: 100%;
+  background-color: #333;
+  /* clip-path: polygon(100% 0%, 0% 100%, 100% 100%); */
+  z-index: -1;
+}
   
   #root{
     width: 100%;  /* Child div takes 100% of body width */
@@ -13,44 +56,66 @@
     
   }
     
-  body {
-    color: aliceblue;
-    /* position: absolute; */
-    /* bottom: 0px;
-    left: 0px;
-    right: 0px; */
-    /* position: absolute; */
-    /* bottom: 0;
-    left: 0; */
-    /* background-repeat: no-repeat; */
-    /* height: 1000vh; */
-    /* margin: 0; */
-    /* content: ''; */
-    background-image: url(/img/background.jpg);
-    background-size: contain;
-    background-position: top left;
-    background-attachment: fixed;
-    
-    /* background-size: cover; */
-    /* background-repeat: repeat; */
-    background-position: center;
-   
-    width: 100%;
-    height: 100%;
-    background-color: #333;
-    /* clip-path: polygon(100% 0%, 0% 100%, 100% 100%); */
-    z-index: -1;
-  }
+  img, video {
+    max-width: 100%;
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Ensure no unexpected inline space */
+}
 
    /* Smooth Scrolling */
-   html {
-    scroll-behavior: smooth;
-    /* width: 100vw;
-    height: 100vh; */
-    margin-left: 0;
-    margin: 0;
-    padding: 0;
-    /* overflow-x: hidden; */
-    
+
+  /* Responsive fixes for mobile */
+@media only screen and (max-width: 768px) {
+  .right-div {
+      display: none; /* Hides right-div on mobile */
   }
+
+  .Telescope {
+      display: none; /* Hides Telescope section */
+  }
+
+  .image-grid img {
+      width: 80px;
+      height: 80px; /* Smaller images for mobile */
+  }
+
+  .carousel-item {
+      min-width: 150px; /* Adjust carousel item size on mobile */
+  }
+
+  .welcome-text {
+      font-size: 32px; /* Smaller text for mobile */
+  }
+
+  .section {
+      padding: 15% 5%; /* Adjust padding for sections */
+  }
+
+  .contact-section {
+      padding: 10%; /* Increase padding for better view */
+  }
+
+  .contact-details {
+      font-size: 12px; /* Smaller font for contact details */
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  /* Additional fixes for very small screens */
+  .navbar a {
+      font-size: 1rem;
+  }
+
+  .welcome-text {
+      font-size: 24px;
+  }
+
+  .carousel-item {
+      min-width: 100px; /* Further reduction for very small screens */
+  }
+
+  .section {
+      padding: 20% 5%;
+  }
+}
   
