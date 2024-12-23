@@ -1,27 +1,18 @@
-/* 
- .section {
-
-    margin-top: 0; 
-    height: 100vh;
-    padding: 100px 20px; 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    scroll-behavior: smooth;
-  } */
-
   .section {
-    margin-top: 0; /* Ensure no extra margin */
-    /* height: 100vh; */
-    height: 100%;
+    min-height: 100vh;
     width: 100%;
-    max-height: 100%;
-    max-width: 100%; /* Prevent overflow */
-    overflow: hidden; /* Prevent content from spilling out */
-    padding: 10% 5%; /* Ensure padding doesn’t push content out */
-    padding: 10% 5%; 
+    padding: 80px 5% 5% 5%;
     display: flex;
     justify-content: center;
-    align-items: center;
-    scroll-behavior: smooth; /* Smooth scrolling */
+    overflow-x: hidden;
+    overflow-y: auto;
+    box-sizing: border-box;
+    /* margin-top: 0;
+    max-height: 100%;
+    max-width: 100%; 
+    overflow: hidden; */
+    /* padding: 10% 5%; 
+    padding: 10% 5%;  */
+    /* align-items: center;
+    scroll-behavior: smooth;  */
 }

@@ -3,27 +3,6 @@ import React, { useEffect, useState } from "react";
 import './Home.css';
 import '../Section/Section.css';
 
-// function Home() {
-// const HomePage = () => {
-// const [images, setImages] = useState([]);
-
-// useEffect(() => {
-//     // Create an array of 100 image paths
-//     const allImages = [];
-//     for (let i = 1; i <= 100; i++) {
-//         allImages.push(`/images/image${i}.jpg`);
-//     }
-
-//     // Function to shuffle and pick 25 random images
-//     const getRandomImages = (imageArray, count) => {
-//         const shuffled = imageArray.sort(() => 0.5 - Math.random());
-//         return shuffled.slice(0, count);
-//     };
-
-//     // Set the random images in state
-//     setImages(getRandomImages(allImages, 25));
-// }, []);
-
 const Home = ({ imageCount = 25, imagesArray }) => {
     const [images, setImages] = useState([]);
 

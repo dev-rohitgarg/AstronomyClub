@@ -1,3 +1,5 @@
+// Redundant file
+
 import React from 'react';
 
 // Function to dynamically import all images from a directory
