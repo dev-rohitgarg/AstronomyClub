@@ -14,43 +14,72 @@
     justify-content: space-between; /* Evenly space items horizontally */
     align-items: center;     /* Align items vertically in the middle */
     height: 100vh;           /* Full viewport height */
-    padding: 5%;             /* Padding set as percentage for responsiveness */
+    padding: 2rem 5%;             /* Padding set as percentage for responsiveness */
   }
   
   .About-text {
-    margin-bottom: 20px;
-    margin-top: 50px;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    font-size: 2.5rem; 
   }
 
 
 .left-div {
-  flex: 0 0 65%;             /* Take up 60% of the section width */
-  height: 100%;            /* Full height of the section */
+  /* flex: 0 0 65%;            
+  height: 100%;            
   margin: 0 10px;  
   display: flex;
-  flex-direction: column;    /* Stack h1 and p vertically */
-  justify-content: flex-start; /* Align content at the top */
-  align-items: center;   /* Align content to the left */
+  flex-direction: column;    
+  justify-content: flex-start; 
+  align-items: center;   
   padding: 20px;
-  font-size: 24px;
+  font-size: 24px; */
+  flex: 0 0 60%;           /* Adjusted from 65% to 60% */
+  height: auto;            /* Changed from 100% to auto */
+  margin: 0;              /* Removed horizontal margin */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Changed to center */
+  align-items: center; /* Changed to flex-start */
+  padding: 2rem;
+  font-size: 1.2rem;     
 }
 
 .right-div {
-  flex: 0 0 35%;             /* Take up 40% of the section width */
+  /* flex: 0 0 35%;            
   
   display: flex;
-  justify-content: center;   /* Center horizontally */
-  align-items: center;       /* Center vertically */
+  justify-content: center;   
+  align-items: center;        */
+  flex: 0 0 40%;          /* Adjusted from 35% to 40% */
+  padding: 2rem;          /* Added padding */
+
 }
 
 .right-div img {
   max-width: 100%;           /* Ensure the image scales to fit */
   height: auto;              /* Maintain the aspect ratio */
-  margin-right: 50px;
+  margin-right: 0;
 }
 
-@media only screen and (max-width: 768px) {
+/* @media only screen and (max-width: 768px) {
   .right-div {
-    display: none; /* Hide the right-div, including the image, on small screens */
+    display: none; 
+  }
+} */
+
+@media only screen and (max-width: 768px) {
+  #section3 {
+    padding: 2rem;        /* Adjusted padding for mobile */
+  }
+  
+  .left-div {
+    flex: 0 0 100%;      /* Take full width on mobile */
+    text-align: center;   /* Center text on mobile */
+    align-items: center;  /* Center items on mobile */
+  }
+
+  .right-div {
+    display: none;
   }
 }
