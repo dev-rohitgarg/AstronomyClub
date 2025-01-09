@@ -47,7 +47,7 @@ const Contact = () => {
             {/* <h2>Contact Us</h2> */}
             <div className="contact-details">
                 <div className="contact-item">
-                    <p>Club Secretary: Rohit Garg</p>
+                    <p>Club Secretary: Samyak</p>
                     <FaEnvelope /><a href="mailto:rohitgarg@mail.com">Secretary</a>
                 </div>
 
