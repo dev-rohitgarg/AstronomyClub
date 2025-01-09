@@ -1,21 +1,13 @@
-
-/* #section5 {
-   display: flex;           
-   justify-content: space-between; 
-   align-items: center;     
-   height: 100vh;           
-   padding: 20px;           
- } */
-
+/* 
  #section5 {
    display: flex;
               
-   justify-content: space-between; /* Evenly space items horizontally */
-   align-items: center;     /* Align items vertically in the middle */
-   /* height: 100vh;           */
+   justify-content: space-between;
+   align-items: center;     
+   
    height: 100%;
-   /* width: 100%; */
-   padding: 5%;             /* Padding as percentage for responsiveness */
+   
+   padding: 5%;           
 }
  
 
@@ -28,31 +20,31 @@
   
   
   .Events {
-    flex: 0 0 70%;             /* Take up 60% of the section width */
-    height: 100%;            /* Full height of the section */
+    flex: 0 0 70%;            
+    height: 100%;            
     margin: 0 10px;  
     display: flex;
-    flex-direction: column;    /* Stack h1 and p vertically */
-    justify-content: flex-start; /* Align content at the top */
-    align-items: center;   /* Align content to the left */
+    flex-direction: column;  
+    justify-content: flex-start; 
+    align-items: center;   
     padding: 20px;
     font-size: 24px;
   }
   
   .Telescope {
-    flex: 0 0 30%;             /* Take up 40% of the section width */
+    flex: 0 0 30%;            
     display: flex;
-    justify-content: center;   /* Center horizontally */
-    align-items: center;       /* Center vertically */
+    justify-content: center;  
+    align-items: center;      
   }
   
   .Telescope img {
-    max-width: 100%;           /* Ensure the image scales to fit */
-    /* height: 50vh;              */
+    max-width: 100%;          
+    
     max-width: 50vh;
-    /* height: 10%; */
+    
     margin-right: 50px;
-    /* height: auto; */
+    
   }
 
   .carousal-container-events{
@@ -62,7 +54,7 @@
 
   .carousel-events {
     display: flex;
-    /* overflow-x: auto; */
+    
     overflow-x: hidden;
     padding: 20px;
     gap: 20px;
@@ -105,7 +97,7 @@
   }
   .scroll-button-events {
     margin-top: 150px;
-    /* position: absolute; */
+    
     top: 50%;
     transform: translateY(-50%);
     background-color: rgba(0, 0, 0, 0.5);
@@ -130,7 +122,55 @@
 
   @media only screen and (max-width: 768px) {
     .Telescope {
-      display: none; /* Hide the right-div, including the image, on small screens */
+      display: none; 
     }
   }
+   */
+
+   #section5 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    padding: 5%;
+  }
   
+  #section5 h1 {
+    margin: 50px 0 20px;
+    text-align: center;
+  }
+  
+  .Events {
+    flex: 0 0 70%;
+    height: 100%;
+    margin: 0 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 20px;
+    font-size: 24px;
+  }
+  
+  .Telescope {
+    flex: 0 0 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .Telescope img {
+    max-width: 50vh;
+    margin-right: 50px;
+  }
+  
+  /* Media Queries */
+  @media only screen and (max-width: 768px) {
+    .Telescope {
+      display: none;
+    }
+    
+    .Events {
+      flex: 0 0 100%;
+    }
+  }

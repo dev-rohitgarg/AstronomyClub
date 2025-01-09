@@ -1,42 +1,3 @@
-// // src/Carousel.jsx
-// import React, { useState } from 'react';
-// import './Carousel.css'; // Make sure to create this file for styling
-
-// const Carousel = () => {
-//     const [currentIndex, setCurrentIndex] = useState(0);
-
-//     const slides = [
-//         'Slide 1',
-//         'Slide 2',
-//         'Slide 3',
-//         'Slide 4',
-//     ];
-
-//     const nextSlide = () => {
-//         setCurrentIndex((currentIndex + 1) % slides.length);
-//     };
-
-//     const prevSlide = () => {
-//         setCurrentIndex((currentIndex - 1 + slides.length) % slides.length);
-//     };
-
-//     return (
-//         <div className="carousel-container-events">
-//             <div className="carousel-wrapper-events" style={{ transform: `translateX(-${currentIndex * 100}%)` }}>
-//                 {slides.map((slide, index) => (
-//                     <div key={index} className="carousel-slide-events">
-//                         {slide}
-//                     </div>
-//                 ))}
-//             </div>
-//             <button className="prev-btn" onClick={prevSlide}>Previous</button>
-//             <button className="next-btn" onClick={nextSlide}>Next</button>
-//         </div>
-//     );
-// };
-
-// export default Carousel;
-// src/Carousel.jsx
 import React, { useState, useEffect } from 'react';
 import './Carousel.css';
 
@@ -50,7 +11,7 @@ const Carousel = () => {
         },
         {
             text: 'Slide 2 Text',
-            image: '/img/event2.jpg',
+            image: '/img/jupiter.jpg',
         },
         {
             text: 'Slide 3 Text',
@@ -58,7 +19,7 @@ const Carousel = () => {
         },
         {
             text: 'Slide 4 Text',
-            image: '/img/event2.jpg',
+            image: '/img/event1.jpg',
         },
     ];
 

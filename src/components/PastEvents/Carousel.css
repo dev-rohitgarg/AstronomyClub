@@ -1,85 +1,15 @@
 /* 
 .carousel-container-events {
-    position: relative;
-    width: 80%;
-    max-width: 600px;
-    margin: 50px auto;
-    overflow: hidden;
-    border: 2px solid #ccc;
-    border-radius: 10px;
-}
-
-.carousel-wrapper-events {
-    display: flex;
-    transition: transform 0.5s ease-in-out;
-}
-
-.carousel-slide-events {
-    min-width: 100%;
-    height: 200px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #7eb3f2;
-    color: white;
-    font-size: 2rem;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-.carousel-container-events button {
-    margin: 10px;
-    padding: 10px;
-    font-size: 16px;
-    cursor: pointer;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-    background-color: #fff;
-    outline: none;
-}
-
-.carousel-container-events button:hover {
-    background-color: #ddd;
-}
-
-.prev-btn, .next-btn {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: rgba(255, 255, 255, 0.8);
-    border: none;
-    cursor: pointer;
-    padding: 10px;
-    font-size: 1rem;
-    border-radius: 50%;
-    transition: background-color 0.3s ease;
-}
-
-.prev-btn {
-    left: 10px;
-}
-
-.next-btn {
-    right: 10px;
-}
-
-.prev-btn:hover, .next-btn:hover {
-    background-color: rgba(200, 200, 200, 0.8);
-} */
-
-
-/* src/Carousel.css */
-.carousel-container-events {
     display: flex;
     position: relative;
     width: 100%;
     max-width: 720px;
-    /* margin: 50px auto; */
+
     overflow: hidden;
-    /* border: 2px solid #ccc; */
+
     border-radius: 10px;
     
-    margin: 0 auto; /* Centering the section */
+    margin: 0 auto; 
 }
 
 .carousel-wrapper-events {
@@ -94,11 +24,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    /* background-color: #7eb3f2; */
-    /* background-color: black; */
+    
     color: white;
     border-radius: 5px;
-    /* padding: 20px; */
+    
     
 }
 
@@ -115,7 +44,7 @@
     justify-content: center;
     align-items: center;
     font-size: 1rem;
-    /* background-color: #4a90e2; */
+
     color: white;
     margin-right: 10px;
     margin-left: 10px;
@@ -126,7 +55,7 @@
 .slide-image-events {
     flex: 1;
     display: flex;
-    /* justify-content: center; */
+ 
     margin-right: 50px;
     align-items: center;
 }
@@ -139,33 +68,17 @@
 }
 
 .carousel-container-events button {
-    /* margin: 10px;
-    padding: 10px;
-    font-size: 16px;
-    cursor: pointer;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-    background-color: #fff;
-    outline: none; */
+    
 }
 
 .carousel-container-events button:hover {
-    /* background-color: #ddd; */
+    
 }
 
 .prev-btn, .next-btn {
-    /* position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: rgba(255, 255, 255, 0.8);
-    border: none;
-    cursor: pointer;
-    padding: 10px;
-    font-size: 1rem;
-    border-radius: 50%;
-    transition: background-color 0.3s ease; */
+  
     margin-top: 150px;
-    /* position: absolute; */
+   
     top: 50%;
     transform: translateY(-50%);
     background-color: rgba(0, 0, 0, 0.5);
@@ -185,6 +98,184 @@
 }
 
 .prev-btn:hover, .next-btn:hover {
-    /* background-color: rgba(200, 200, 200, 0.8); */
+    
     background-color: rgba(0, 0, 0, 0.8);
+} */
+
+.carousel-container-events {
+    display: flex;
+    position: relative;
+    width: 100%;
+    max-width: 720px;
+    overflow: hidden;
+    border-radius: 10px;
+    margin: 0 auto;
+  }
+  
+  .carousel-wrapper-events {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: 100%;
+  }
+  
+  .carousel-slide-events {
+    min-width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border-radius: 5px;
+  }
+  
+  .slide-content-events {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+  }
+  
+  .slide-text-events {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    color: white;
+    margin: 0 10px;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  .slide-image-events {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    margin-right: 50px;
+  }
+  
+  .slide-image-events img {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 5px;
+    object-fit: cover;
+  }
+  
+  /* Navigation Buttons */
+  .prev-btn,
+  .next-btn {
+    margin-top: 150px;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 1;
+    transition: background-color 0.3s ease;
+  }
+  
+  .prev-btn {
+    left: 0;
+  }
+  
+  .next-btn {
+    right: 0;
+  }
+  
+  .prev-btn:hover,
+  .next-btn:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  /* Media Queries */
+  /* @media only screen and (max-width: 768px) {
+    .slide-content-events {
+      flex-direction: column;
+    }
+  
+    .slide-text-events,
+    .slide-image-events {
+      flex: 1;
+      margin: 10px 0;
+    }
+  
+    .carousel-slide-events {
+      height: auto;
+      min-height: 400px;
+    }
+  } */
+
+  /* ... existing code ... */
+
+/* Media Queries */
+@media only screen and (max-width: 768px) {
+  .carousel-container-events {
+    max-width: 100%;
+    padding: 0 10px;
+  }
+
+  .slide-content-events {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+
+  .slide-text-events,
+  .slide-image-events {
+    flex: none;
+    width: 100%;
+    margin: 10px 0;
+    text-align: center;
+  }
+
+  .slide-image-events {
+    margin-right: 0;
+    height: 200px; /* Fixed height for images on mobile */
+  }
+
+  .slide-image-events img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* Ensures image maintains aspect ratio */
+  }
+
+  .carousel-slide-events {
+    height: auto;
+    min-height: 350px;
+    padding: 10px 0;
+  }
+
+  /* Adjust navigation buttons for mobile */
+  .prev-btn,
+  .next-btn {
+    margin-top: 0;
+    position: absolute;
+    top: 50%;
+    padding: 15px;
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+
+  .prev-btn {
+    left: 5px;
+  }
+
+  .next-btn {
+    right: 5px;
+  }
+}
+
+/* For very small screens */
+@media only screen and (max-width: 480px) {
+  .carousel-slide-events {
+    min-height: 300px;
+  }
+
+  .slide-text-events {
+    font-size: 0.9rem;
+    padding: 5px;
+  }
+
+  .slide-image-events {
+    height: 150px;
+  }
 }

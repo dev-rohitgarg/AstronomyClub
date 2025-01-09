@@ -1,4 +1,3 @@
-// About.js
 import React, { useEffect, useRef, useState } from "react";
 import Carousel from "./Carousel";
 import './PastEvents.css';
