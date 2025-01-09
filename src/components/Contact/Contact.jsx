@@ -43,20 +43,24 @@ import { FaInstagram, FaEnvelope } from 'react-icons/fa'; // Import icons
 // };
 const Contact = () => {
     return (
-        <div className="section" id='section4'>
-            <h2>Contact Us</h2>
+        <div id='section4'>
+            {/* <h2>Contact Us</h2> */}
             <div className="contact-details">
                 <div className="contact-item">
+                    <p>Club Secretary: Rohit Garg</p>
                     <FaEnvelope /><a href="mailto:rohitgarg@mail.com">Secretary</a>
                 </div>
+
                 <div className="contact-item">
+                    <p>Faculty Incharge: Prof. Abhijit</p>
                     <FaEnvelope /><a href="mailto:johndoe@university.edu">Faculty</a>
                 </div>
                 <div className="contact-item">
-                    <FaInstagram /><a href="https://instagram.com/clubname" target="_blank" rel="noopener noreferrer">@clubname</a>
+                    <p>Club mail ID</p>
+                    <FaEnvelope /><a href="mailto:clubname@university.edu">Club Email</a>
                 </div>
                 <div className="contact-item">
-                    <FaEnvelope /><a href="mailto:clubname@university.edu">Club Email</a>
+                    <FaInstagram /><a href="https://instagram.com/clubname" target="_blank" rel="noopener noreferrer">@clubname</a>
                 </div>
             </div>
         </div>
